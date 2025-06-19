@@ -93,10 +93,10 @@
             
             <section id="contenders">
                  <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight">The Three Contenders</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">Three names have been shortlisted. Each brings a different story and set of strategic implications to the table.</p>
+                    <h2 class="text-3xl font-bold tracking-tight">The Four Contenders</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">Four names have been shortlisted. Each brings a different story and set of strategic implications to the table.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="card rounded-lg p-8 text-center">
                         <h3 class="text-3xl font-bold highlight-text">Lune</h3>
                         <p class="mt-4 text-slate-300">Derived from a geometric principle—a crescent shape formed by two circular arcs. Evokes precision, science, and a subtle connection to light (lunar).</p>
@@ -108,6 +108,10 @@
                      <div class="card rounded-lg p-8 text-center">
                         <h3 class="text-3xl font-bold highlight-text">Airy</h3>
                         <p class="mt-4 text-slate-300">A direct link to the Airy disk, a core optical physics concept. Leverages the legacy and reputation of our current firm, "Airy Optics."</p>
+                    </div>
+                    <div class="card rounded-lg p-8 text-center">
+                        <h3 class="text-3xl font-bold highlight-text">ELE</h3>
+                        <p class="mt-4 text-slate-300">From "element," signifying foundational components in optics and materials. Leverages existing company "ELE Optics, Inc." and domain ownership.</p>
                     </div>
                 </div>
             </section>
@@ -123,7 +127,7 @@
                     </div>
                 </div>
                 <div class="mt-8 text-center max-w-3xl mx-auto">
-                     <p class="text-slate-300">The radar chart reveals the distinct strategic profile of each name. <strong class="highlight-text">Lune</strong> demonstrates a strong, well-rounded profile with no major weaknesses. <strong class="highlight-text">Airy</strong> shows strength in its industry connection but falters on metrics related to market positioning and its fit with our broad, disruptive vision. <strong class="highlight-text">Moda</strong> is strong on innovation but carries significant risk due to potential market confusion.</p>
+                     <p class="text-slate-300">The radar chart reveals the distinct strategic profile of each name. <strong class="highlight-text">Lune</strong> and <strong class="highlight-text">ELE</strong> demonstrate strong, well-rounded profiles. <strong class="highlight-text">Airy</strong> shows strength in its industry connection but falters on market positioning and broad vision. <strong class="highlight-text">Moda</strong> is innovative but carries significant risk due to potential market confusion.</p>
                 </div>
             </section>
 
@@ -133,11 +137,16 @@
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">After a comprehensive analysis, the strategic implications of each name become clear.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="card rounded-lg p-6 border-t-4 border-green-400">
                         <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">✅</span> Lune</h3>
                         <p class="mt-2 font-semibold text-green-300 text-lg">Overall: Strong Contender</p>
                         <p class="mt-4 text-slate-300">Offers the best balance of being unique, memorable, and having a subtle scientific connection without carrying legacy baggage. It provides a clean slate for branding a truly disruptive platform and allows our pitch to focus on technology, not brand clarification.</p>
+                    </div>
+                    <div class="card rounded-lg p-6 border-t-4 border-green-400">
+                        <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">✅</span> ELE</h3>
+                        <p class="mt-2 font-semibold text-green-300 text-lg">Overall: Strong Contender</p>
+                        <p class="mt-4 text-slate-300">A concise name with strong ties to fundamental optics (elements, materials). It benefits from existing brand trust (ELE Optics, Inc.) without the narrow legacy of "Airy," offering a path for clear, expanded market positioning.</p>
                     </div>
                     <div class="card rounded-lg p-6 border-t-4 border-yellow-400">
                         <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">⚠️</span> Moda</h3>
@@ -154,7 +163,7 @@
                 <div class="mt-16 text-center card rounded-xl p-8 max-w-4xl mx-auto bg-sky-900/50">
                     <h3 class="text-xl font-bold highlight-text tracking-wider">FINAL RECOMMENDATION</h3>
                     <p class="mt-4 text-2xl md:text-3xl font-bold text-white">
-                        While "Airy" feels familiar, <span class="text-cyan-300">"Lune" appears to be the most strategically sound choice</span> for a revolutionary platform aiming to redefine the ODA industry.
+                        Both <span class="text-cyan-300">"Lune" and "ELE" emerge as strong contenders</span> for a revolutionary ODA platform, offering the best strategic foundations for our disruptive vision.
                     </p>
                 </div>
             </section>
@@ -233,6 +242,17 @@
                         pointBorderColor: '#fff',
                         pointHoverBackgroundColor: '#fff',
                         pointHoverBorderColor: 'rgb(255, 99, 132)'
+                    },
+                    {
+                        label: 'ELE',
+                        data: [5, 4, 4, 4, 4, 4, 4],
+                        fill: true,
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgb(54, 162, 235)',
+                        pointBackgroundColor: 'rgb(54, 162, 235)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(54, 162, 235)'
                     }
                 ]
             },
@@ -285,3 +305,4 @@
     </script>
 </body>
 </html>
+
