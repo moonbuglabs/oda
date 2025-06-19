@@ -40,6 +40,27 @@
         .kpi-card {
             border-left: 4px solid #99CCFF;
         }
+        .evaluation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+        .evaluation-table th, .evaluation-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(153, 204, 255, 0.1);
+        }
+        .evaluation-table th {
+            background-color: rgba(0, 47, 71, 0.7);
+            font-weight: 600;
+            color: #C2DFFF;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .evaluation-table tr:last-child td {
+            border-bottom: none;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -91,12 +112,107 @@
                 </div>
             </section>
             
+            <section id="evaluation-table-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight">Name Evaluation Matrix (Detailed)</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-400">Each name is scored from 1 (Weakest) to 5 (Strongest) against key strategic metrics. This table provides the underlying qualitative and quantitative breakdown for our analysis.</p>
+                </div>
+                <div class="card rounded-lg p-6 overflow-x-auto">
+                    <table class="evaluation-table">
+                        <thead>
+                            <tr>
+                                <th>Metric / Name</th>
+                                <th>Lune</th>
+                                <th>Moda</th>
+                                <th>Airy</th>
+                                <th>ELE</th>
+                                <th>FluxODA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>**Origin / Meaning**</td>
+                                <td>Geometric principle (crescent shape).</td>
+                                <td>"Fashion" or "Mode" (Spanish/Italian/Portuguese); "Mode/Method" (English). Intentional "ODA" embed.</td>
+                                <td>Scientific (Airy pattern/disk, diffraction). Legacy firm name.</td>
+                                <td>From "element," signifying foundational components in optics and materials. Leverages existing company "ELE Optics, Inc." and domain ownership.</td>
+                                <td>Combines "Flux" (flow, dynamism, throughput) with "ODA" (Optical Design Automation). FluxODA.com is available. The platform could also be known simply as Flux.</td>
+                            </tr>
+                            <tr>
+                                <td>**Conciseness / Memorability**</td>
+                                <td><span class="font-bold">Strong.</span> Short, easy to pronounce & recall.</td>
+                                <td><span class="font-bold">Strong.</span> Short, easy to pronounce & recall.</td>
+                                <td><span class="font-bold">Strong.</span> Short, easy to pronounce & recall.</td>
+                                <td><span class="font-bold">Strong.</span> Short, easy to pronounce & recall.</td>
+                                <td><span class="font-bold">Strong.</span> Short, impactful, and easy to remember.</td>
+                            </tr>
+                            <tr>
+                                <td>**Direct Industry Connection**</td>
+                                <td><span class="font-bold">Subtle.</span> Connects to geometry/optics. (Score: 3)</td>
+                                <td><span class="font-bold">Indirect/Coded.</span> "ODA" embed, but primary association is fashion. (Score: 2)</td>
+                                <td><span class="font-bold">Direct.</span> Strong link to fundamental optics (diffraction, resolution). (Score: 5)</td>
+                                <td><span class="font-bold">Strong.</span> Ties to fundamental optics, elements, materials. (Score: 4)</td>
+                                <td><span class="font-bold">Explicit.</span> Directly signals Optical Design Automation. (Score: 5)</td>
+                            </tr>
+                            <tr>
+                                <td>**Conveys Innovation/Disruption**</td>
+                                <td><span class="font-bold">Moderate-Strong.</span> Fresh, unique, elegant. (Score: 4)</td>
+                                <td><span class="font-bold">Strong.</span> "Moda" suggests modern, cutting-edge, new "mode." (Score: 5)</td>
+                                <td><span class="font-bold">Weak-Moderate.</span> Can feel evolutionary, not revolutionary, due to legacy. (Score: 2)</td>
+                                <td><span class="font-bold">Moderate-Strong.</span> Modern sound, unburdened by narrow legacy. (Score: 4)</td>
+                                <td><span class="font-bold">Strongest.</span> "Flux" implies dynamism, throughput, disrupting status quo. (Score: 5)</td>
+                            </tr>
+                            <tr>
+                                <td>**VC Appeal**</td>
+                                <td><span class="font-bold">Strong.</span> Sophisticated, unique, memorable. Allows focus on technology. (Score: 5)</td>
+                                <td><span class="font-bold">Moderate-Weak.</span> Clever, but potential initial confusion with "fashion" needs heavy explanation. (Score: 2)</td>
+                                <td><span class="font-bold">Moderate.</span> Scientific credibility is good, but legacy scope limits initial perceived market breadth. (Score: 3)</td>
+                                <td><span class="font-bold">Strong.</span> Existing company, clear domain, solid and professional. (Score: 4)</td>
+                                <td><span class="font-bold">Strongest.</span> Clear, powerful, modern, directly relates to domain and speed. (Score: 5)</td>
+                            </tr>
+                            <tr>
+                                <td>**Cadence Analogy Fit**</td>
+                                <td><span class="font-bold">Good.</span> Allows for a story of a new, foundational layer for ODA, similar to Cadence in EDA. (Score: 4)</td>
+                                <td><span class="font-bold">Moderate.</span> "New mode" aligns, but name itself lacks an inherent "system/process" feel. (Score: 3)</td>
+                                <td><span class="font-bold">Weak.</span> Name is tied to a specific niche, making it harder to convey a broad, foundational platform like Cadence. (Score: 1)</td>
+                                <td><span class="font-bold">Good.</span> Suggests foundational, comprehensive elements. (Score: 4)</td>
+                                <td><span class="font-bold">Excellent.</span> "Flux" implies flow, continuous process, mirroring Cadence's holistic design approach. (Score: 5)</td>
+                            </tr>
+                            <tr>
+                                <td>**Ease of Market Positioning**</td>
+                                <td><span class="font-bold">Good.</span> Clear slate for new, comprehensive platform. (Score: 4)</td>
+                                <td><span class="font-bold">Challenging.</span> Requires significant effort to overcome "fashion" association and educate market. (Score: 2)</td>
+                                <td><span class="font-bold">Very Challenging.</span> Requires aggressive re-education to broaden perceived scope beyond polarization. (Score: 1)</td>
+                                <td><span class="font-bold">Good.</span> Benefits from existing name without narrow scope, clear path to expanded role. (Score: 4)</td>
+                                <td><span class="font-bold">Very Easy.</span> Explicit, unique, and directly conveys value proposition. (Score: 5)</td>
+                            </tr>
+                            <tr>
+                                <td>**Potential for Confusion**</td>
+                                <td><span class="font-bold">Low.</span> Not commonly used in tech/optics. (Score: 5)</td>
+                                <td><span class="font-bold">High.</span> Strong association with the fashion industry. (Score: 1)</td>
+                                <td><span class="font-bold">High.</span> Conflation with "Airy Optics" (polarization-only) is a major risk. (Score: 1)</td>
+                                <td><span class="font-bold">Low.</span> Existing company provides context, unique enough in this domain. (Score: 4)</td>
+                                <td><span class="font-bold">Very Low.</span> Highly specific combination, unique in the ODA space. (Score: 5)</td>
+                            </tr>
+                            <tr>
+                                <td>**Overall Recommendation**</td>
+                                <td><span class="font-bold">Strong Contender.</span></td>
+                                <td><span class="font-bold">Risky, but Clever.</span></td>
+                                <td><span class="font-bold">High Risk.</span></td>
+                                <td><span class="font-bold">Strong Contender.</span></td>
+                                <td><span class="font-bold">Top Contender.</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
             <section id="contenders">
                  <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight">The Four Contenders</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">Four names have been shortlisted. Each brings a different story and set of strategic implications to the table.</p>
+                    <h2 class="text-3xl font-bold tracking-tight">The Five Contenders (Visualized)</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">These are the names we're considering for our platform. Each embodies a different strategic approach to branding our revolutionary ODA solution.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                     <div class="card rounded-lg p-8 text-center">
                         <h3 class="text-3xl font-bold highlight-text">Lune</h3>
                         <p class="mt-4 text-slate-300">Derived from a geometric principle—a crescent shape formed by two circular arcs. Evokes precision, science, and a subtle connection to light (lunar).</p>
@@ -113,13 +229,17 @@
                         <h3 class="text-3xl font-bold highlight-text">ELE</h3>
                         <p class="mt-4 text-slate-300">From "element," signifying foundational components in optics and materials. Leverages existing company "ELE Optics, Inc." and domain ownership.</p>
                     </div>
+                    <div class="card rounded-lg p-8 text-center">
+                        <h3 class="text-3xl font-bold highlight-text">FluxODA</h3>
+                        <p class="mt-4 text-slate-300">Combines "Flux" (flow, dynamism, throughput) with "ODA" (Optical Design Automation). <strong class="text-cyan-300">FluxODA.com is available.</strong> The platform could also be known simply as <strong class="text-cyan-300">Flux</strong>.</p>
+                    </div>
                 </div>
             </section>
 
             <section id="analysis">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight">Strategic Evaluation: A Head-to-Head Comparison</h2>
-                    <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-400">To provide an objective comparison, we scored each name against key strategic metrics. The ideal name should create a large, balanced shape on the chart, indicating strength across all categories from memorability to VC appeal.</p>
+                    <h2 class="text-3xl font-bold tracking-tight">Strategic Evaluation: A Head-to-Head Comparison (Radar Chart)</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-400">The radar chart visually summarizes each name's strategic profile. A larger, more balanced shape indicates stronger performance across all evaluation metrics, highlighting the ideal candidate for our disruptive vision.</p>
                 </div>
                 <div class="card rounded-lg p-6 sm:p-8">
                     <div class="chart-container">
@@ -127,7 +247,7 @@
                     </div>
                 </div>
                 <div class="mt-8 text-center max-w-3xl mx-auto">
-                     <p class="text-slate-300">The radar chart reveals the distinct strategic profile of each name. <strong class="highlight-text">Lune</strong> and <strong class="highlight-text">ELE</strong> demonstrate strong, well-rounded profiles. <strong class="highlight-text">Airy</strong> shows strength in its industry connection but falters on market positioning and broad vision. <strong class="highlight-text">Moda</strong> is innovative but carries significant risk due to potential market confusion.</p>
+                     <p class="text-slate-300">The radar chart vividly displays the distinct strategic profile of each name. <strong class="highlight-text">FluxODA</strong> clearly emerges with the most balanced and comprehensive strengths, demonstrating optimal fit across all evaluated criteria. <strong class="highlight-text">Lune</strong> and <strong class="highlight-text">ELE</strong> also present strong, well-rounded profiles. In contrast, <strong class="highlight-text">Airy</strong> shows strength in its direct industry connection but significantly falters on market positioning and broad vision, while <strong class="highlight-text">Moda</strong>, despite conveying innovation, carries substantial risk due to potential market confusion.</p>
                 </div>
             </section>
 
@@ -137,21 +257,26 @@
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">After a comprehensive analysis, the strategic implications of each name become clear.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card rounded-lg p-6 border-t-4 border-green-400">
+                        <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">✅</span> FluxODA</h3>
+                        <p class="mt-2 font-semibold text-green-300 text-lg">Overall: Top Contender</p>
+                        <p class="mt-4 text-slate-300">Directly communicates the core function and innovative capabilities. Strong VC appeal, excellent Cadence analogy fit, and very low confusion risk. Positions the platform as a comprehensive, high-performance solution. Domain available, with option to shorten to "Flux."</p>
+                    </div>
                     <div class="card rounded-lg p-6 border-t-4 border-green-400">
                         <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">✅</span> Lune</h3>
                         <p class="mt-2 font-semibold text-green-300 text-lg">Overall: Strong Contender</p>
-                        <p class="mt-4 text-slate-300">Offers the best balance of being unique, memorable, and having a subtle scientific connection without carrying legacy baggage. It provides a clean slate for branding a truly disruptive platform and allows our pitch to focus on technology, not brand clarification.</p>
+                        <p class="mt-4 text-slate-300">Offers a unique, memorable, and subtly scientific name with a clean slate for branding. It allows the pitch to focus purely on technology and market opportunity without needing to clarify name meaning.</p>
                     </div>
                     <div class="card rounded-lg p-6 border-t-4 border-green-400">
                         <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">✅</span> ELE</h3>
                         <p class="mt-2 font-semibold text-green-300 text-lg">Overall: Strong Contender</p>
-                        <p class="mt-4 text-slate-300">A concise name with strong ties to fundamental optics (elements, materials). It benefits from existing brand trust (ELE Optics, Inc.) without the narrow legacy of "Airy," offering a path for clear, expanded market positioning.</p>
+                        <p class="mt-4 text-slate-300">A concise name with strong ties to fundamental optics (elements, materials). It benefits from existing brand trust (ELE Optics, Inc.) and domain ownership without the narrow legacy of "Airy," offering a clear path for expanded market positioning.</p>
                     </div>
                     <div class="card rounded-lg p-6 border-t-4 border-yellow-400">
                         <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">⚠️</span> Moda</h3>
                         <p class="mt-2 font-semibold text-yellow-300 text-lg">Overall: Risky, but Clever</p>
-                        <p class="mt-4 text-slate-300">The embedded "ODA" is a clever touch, but the dominant "fashion" connotation creates a substantial uphill battle for market positioning and VC messaging. The risk of confusion is a significant strategic liability.</p>
+                        <p class="mt-4 text-slate-300">The embedded "ODA" is clever, but the dominant "fashion" connotation creates a substantial uphill battle for market positioning and VC messaging. The risk of confusion is a significant strategic liability.</p>
                     </div>
                      <div class="card rounded-lg p-6 border-t-4 border-red-400">
                         <h3 class="text-2xl font-bold flex items-center"><span class="text-3xl mr-3">❌</span> Airy</h3>
@@ -163,7 +288,7 @@
                 <div class="mt-16 text-center card rounded-xl p-8 max-w-4xl mx-auto bg-sky-900/50">
                     <h3 class="text-xl font-bold highlight-text tracking-wider">FINAL RECOMMENDATION</h3>
                     <p class="mt-4 text-2xl md:text-3xl font-bold text-white">
-                        Both <span class="text-cyan-300">"Lune" and "ELE" emerge as strong contenders</span> for a revolutionary ODA platform, offering the best strategic foundations for our disruptive vision.
+                        <span class="text-cyan-300">"FluxODA" emerges as the strongest candidate</span>, closely followed by "Lune" and "ELE," offering the best strategic foundations for our disruptive vision.
                     </p>
                 </div>
             </section>
@@ -253,6 +378,17 @@
                         pointBorderColor: '#fff',
                         pointHoverBackgroundColor: '#fff',
                         pointHoverBorderColor: 'rgb(255, 0, 0)'
+                    },
+                    {
+                        label: 'FluxODA',
+                        data: [5, 5, 5, 5, 5, 5, 5],
+                        fill: true,
+                        backgroundColor: 'rgba(128, 0, 128, 0.2)',
+                        borderColor: 'rgb(128, 0, 128)',
+                        pointBackgroundColor: 'rgb(128, 0, 128)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(128, 0, 128)'
                     }
                 ]
             },
